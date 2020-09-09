@@ -1,0 +1,24 @@
+{
+  "name": "xinspector",
+  "version": "0.0.1",
+  "description": "H5 DOM Inspector",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/me-hotel/XInspector.git"
+  },
+  "keywords": [
+    "H5",
+    "inspector",
+    "toolkit"
+  ],
+  "author": "me-hotel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/me-hotel/XInspector/issues"
+  },
+  "homepage": "https://github.com/me-hotel/XInspector#readme"
+}
