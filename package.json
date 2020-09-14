@@ -1,11 +1,12 @@
 {
   "name": "xinspector",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "H5 DOM Inspector",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prebuild": "npm run clean",
     "build": "webpack --config=build/webpack.config.js",
+    "prepublish": "npm run build",
     "clean": "rimraf core"
   },
   "main": "./core/xinspector.js",
