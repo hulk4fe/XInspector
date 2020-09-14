@@ -2,10 +2,14 @@
   "name": "xinspector",
   "version": "0.0.1",
   "description": "H5 DOM Inspector",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "npm run clean",
+    "build": "webpack --config=build/webpack.config.js",
+    "clean": "rimraf core"
   },
+  "main": "./core/xinspector.js",
+  "module": "./core/xinspector.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/me-hotel/XInspector.git"
@@ -20,5 +24,18 @@
   "bugs": {
     "url": "https://github.com/me-hotel/XInspector/issues"
   },
-  "homepage": "https://github.com/me-hotel/XInspector#readme"
+  "homepage": "https://github.com/me-hotel/XInspector#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-transform-runtime": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/runtime": "^7.10.2",
+    "@babel/types": "^7.10.2",
+    "babel-loader": "^8.0.6",
+    "rimraf": "^3.0.0",
+    "terser-webpack-plugin": "^2.3.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-merge": "^4.2.2"
+  }
 }
