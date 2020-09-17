@@ -3,3 +3,4 @@ lib
 views
 .github
 index.js
+.babelrc
